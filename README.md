@@ -148,3 +148,6 @@ vesrion 2 program has been changed to retrieve the user information that IAP pro
         
         // render template
         page = render_template('index.html', email=user_email, id=user_id)
+        
+        // index.html in 2-HellowUser
+        Hello, {{ email }}! Your persistent ID is {{ id }}.
