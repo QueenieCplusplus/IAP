@@ -68,4 +68,18 @@ the main code is in main.py file, it use framework called flask, which responds 
       
     ![](https://cdn.qwiklabs.com/BUrEJObysrNmE%2FqmU234RAj3kMiAvwOswH%2FAmSdJ%2FNY%3D)
 
+# IAP
 
+from step 2:
+
+> restrict access using IAP
+
+* 2.1, in cloud console, navigate to Secuity > IAP
+
+* 2.2, enable the IAP service, then click on the tab "configure consent screen" for Oauth.
+
+* 2.3, select "internal" for user type, and click on "create".
+
+* 2.4, config the property of the Oauth.
+
+    
