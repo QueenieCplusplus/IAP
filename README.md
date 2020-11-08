@@ -28,5 +28,5 @@ step from 1
 
       git clone https://github.com/googlecodelabs/user-authentication-with-iap.git
 
-      cd user-authentication-with-iap.git
+      cd user-authentication-with-iap
 
