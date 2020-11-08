@@ -36,13 +36,9 @@ step from 1
 
 * 1.1, in cloud console, open the cloud shell tab, and type follwing cmd line to clone app from github.
 
-      git clone https://github.com/googlecodelabs/user-authentication-with-iap.git
+      git clone https://github.com/QueenieCplusplus/Login_Python_App.git
       
-      cd user-authentication-with-iap
-      // change to main project folder
-      
-      cd 1-HelloWorld
-      // change from main folder to subfolder
+      cd Login_Python_App
       
       cat [file name]
       // to do edit or read the code line
