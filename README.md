@@ -123,7 +123,7 @@ Login Again without Cache
      
 * 2.10, do not enter the already-exist account, use "another user account", re-enter username and password to check credentials is allowed.
 
-# get User ID
+# Spoofing Credential Infos
 
 from step 3:
 
@@ -151,12 +151,38 @@ vesrion 2 program has been changed to retrieve the user information that IAP pro
         
         // index.html in 2-HellowUser
         Hello, {{ email }}! Your persistent ID is {{ id }}.
+        
+        // template
+        
+        <!doctype html>
+        <html>
+        <head>
+          <title>IAP Hello User</title>
+        </head>
+        <body>
+          <h1>Hello World</h1>
+
+          <p>
+            Hello, totally fake email! Your persistent ID is None.
+          </p>
+
+          <p>
+            This is step 2 of the <em>User Authentication with IAP</em>
+            codelab.
+         </p>
+
+        </body>
+        </html>
 
 * 3.3, run gae browse
 
       gcloud app browse
 
       [result in browse]
+      
+ * 3.4, Hacker start to spoof.
+ 
+       curl -X GET <apps url> -H "X-Goog-Authenticated-User-Email: totally fake email"
 
 ![](https://raw.githubusercontent.com/QueenieCplusplus/IAP/main/gae%20browse.png)
 
