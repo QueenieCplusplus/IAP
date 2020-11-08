@@ -84,4 +84,6 @@ from step 2:
 
  ![](https://raw.githubusercontent.com/QueenieCplusplus/IAP/main/oauth_val.png)
 
-    
+* 2.5, in cloud shell, disable the flexible api.
+
+      gcloud services disable appengineflex.googleapis.com
