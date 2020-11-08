@@ -109,6 +109,8 @@ Access Control
 
 * 2.8, back to IAP config page in cloud console, and set up the AC list.
 
-![ac](https://raw.githubusercontent.com/QueenieCplusplus/IAP/main/AC1.png)
+![ac0](https://raw.githubusercontent.com/QueenieCplusplus/IAP/main/AC1.png)
+
+![ac1](https://raw.githubusercontent.com/QueenieCplusplus/IAP/main/AC1-2.png)
 
 
