@@ -145,3 +145,6 @@ vesrion 2 program has been changed to retrieve the user information that IAP pro
         // in main.py in 2-HelloUser
         user_email = request.headers.get('X-Goog-Authenticated-User-Email')
         user_id = request.headers.get('X-Goog-Authenticated-User-ID')
+        
+        // render template
+        page = render_template('index.html', email=user_email, id=user_id)
