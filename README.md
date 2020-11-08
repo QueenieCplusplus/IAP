@@ -206,7 +206,9 @@ from step 4:
 
       cd ~/user-authentication-with-iap/3-HelloVerifiedUser
       
-      gcloud app run
+      gcloud app deploy
+      
+      gcloud app browse
       
 * tips & attentions:
 
