@@ -123,4 +123,17 @@ Login Again without Cache
      
 * 2.10, do not enter the already-exist account, use "another user account", re-enter username and password to check credentials is allowed.
 
+# get User ID
 
+from step 3:
+
+> User ID will shows in request header it passed thru in web browser.
+Make an app page to display it.
+
+* 3.1, back to cloud shell, type cm line below.
+
+      cd ~/user-authentication-with-iap/2-HelloUser
+        
+* 3.2,  deploy it with GAE.
+
+      gcloud app deploy
