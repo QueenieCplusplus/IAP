@@ -113,4 +113,14 @@ Access Control
 
 ![ac1](https://raw.githubusercontent.com/QueenieCplusplus/IAP/main/AC1-2.png)
 
+# AC Test
+
+Login Again without Cache
+
+* 2.9, browse to app url, refresh it, ang test login using the following adress.
+
+     https://iap-example-999999.appspot.com/_gcp_iap/clear_login_cookie.
+     
+* 2.10, do not enter the already-exist account, use "another user account", re-enter username and password to check credentials is allowed.
+
 
