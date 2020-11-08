@@ -82,4 +82,6 @@ from step 2:
 
 * 2.4, config the property of the Oauth.
 
+ ![](https://raw.githubusercontent.com/QueenieCplusplus/IAP/main/oauth_val.png)
+
     
