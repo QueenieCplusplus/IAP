@@ -132,7 +132,11 @@ Make an app page to display it.
 
 * 3.1, back to cloud shell, type cm line below.
 
-      cd ~/user-authentication-with-iap/2-HelloUser
+      git clone https://github.com/googlecodelabs/user-authentication-with-iap.git
+      
+      cd user-authentication-with-ia
+      
+      cd 2-HelloUser
         
 * 3.2,  deploy it with GAE.
 
@@ -206,7 +210,9 @@ from step 4:
 
 * 4.1, in cloud shell, deploy version 3 app
 
-      cd ~/user-authentication-with-iap/3-HelloVerifiedUser
+      git clone https://github.com/QueenieCplusplus/Login_Python_App.git
+      
+      cd Login_Python_App
       
       gcloud app deploy
       
