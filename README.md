@@ -123,7 +123,7 @@ Login Again without Cache
      
 * 2.10, do not enter the already-exist account, use "another user account", re-enter username and password to check credentials is allowed.
 
-# Spoofing Credential Infos
+# Spoofing 
 
 from step 3:
 
