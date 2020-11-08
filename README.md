@@ -140,7 +140,7 @@ Make an app page to display it.
       
 * tips & attentions:
 
-vesrion 2 program has been changed to retrieve the user information that IAP provides in request headers, and the template now displays that data.
+vesrion 2 program has been changed to retrieve the user information that IAP provides in request headers, and the template now displays that data. X-Goog-Authenticated-User- headers are provided by IAP.
 
         // in main.py in 2-HelloUser
         user_email = request.headers.get('X-Goog-Authenticated-User-Email')
