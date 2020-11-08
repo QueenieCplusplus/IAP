@@ -159,3 +159,37 @@ vesrion 2 program has been changed to retrieve the user information that IAP pro
       [result in browse]
 
 ![](https://raw.githubusercontent.com/QueenieCplusplus/IAP/main/gae%20browse.png)
+
+# Crypto
+
+from step 4:
+
+> a protection to avoid http header spoofing
+
+* 4.1, in cloud shell, deploy version 3 app
+
+      cd ~/user-authentication-with-iap/3-HelloVerifiedUser
+      
+      gcloud app run
+      
+* tips & attentions:
+
+   using jwt lib to do crypto verification.
+
+   code is like this:
+   
+       def user():
+       
+        assertion = request.headers.get('X-Goog-IAP-JWT-Assertion')
+        if assertion is None:
+            return None, None
+
+        info = jwt.decode(
+            assertion,
+            keys(),
+            algorithms=['ES256'],
+            audience=audience()
+        )
+
+        return info['email'], info['sub']
+
