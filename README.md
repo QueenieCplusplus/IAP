@@ -137,3 +137,7 @@ Make an app page to display it.
 * 3.2,  deploy it with GAE.
 
       gcloud app deploy
+      
+* tips & attentions:
+
+vesrion 2 program has been changed to retrieve the user information that IAP provides in request headers, and the template now displays that data.
