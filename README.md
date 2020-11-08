@@ -91,5 +91,9 @@ from step 2:
 * tips & attentions:
 
     App Engine has its standard and flexible environments which are optimized for different application architectures. Currently, when enabling IAP for App Engine, if the Flex API is enabled, GCP will look for a Flex Service Account. Your project comes with a multitude of APIs already enabled for the purpose of convenience. However, this creates a unique situation where the Flex API is enabled without a Service Account created.
+    
+* 2.6, return to IAP config page in cloud console, and refresh it to see blow GAE row, and select toggle button to enable the IAP service in column.
+
+ ![](https://raw.githubusercontent.com/QueenieCplusplus/IAP/main/protect%20http%20resources.png)
 
     
