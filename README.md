@@ -98,7 +98,15 @@ from step 2:
 
 # Login Test
 
-before telling IAP which account is allowed through,
+* 2.7, before telling IAP which account is allowed through,
 the login deose not work out.
 
 ![](https://raw.githubusercontent.com/QueenieCplusplus/IAP/main/login%20test.png)
+
+# AC
+
+Access Control
+
+* 2.8, back to IAP config page in cloud console, and set up the AC list.
+
+
