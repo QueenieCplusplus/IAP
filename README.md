@@ -151,3 +151,11 @@ vesrion 2 program has been changed to retrieve the user information that IAP pro
         
         // index.html in 2-HellowUser
         Hello, {{ email }}! Your persistent ID is {{ id }}.
+
+* 3.3, run gae browse
+
+      gcloud app browse
+
+      [result in browse]
+
+![](https://raw.githubusercontent.com/QueenieCplusplus/IAP/main/gae%20browse.png)
