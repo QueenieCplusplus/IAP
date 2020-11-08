@@ -16,6 +16,12 @@
 
 (4) avoid from spoofing using Crypto-Verification
 
+# Main Cmd line
+
+    gcloud app deploy
+    
+    gcloud app browse
+
 ---------
 
 # GAE (most simplest deployment solution)
@@ -36,6 +42,9 @@ step from 1
       cd 1-HelloWorld
       // change from main folder to subfolder
       
+      cat [file name]
+      // to do edit or read the code line
+      
 * tips & attentions:
 
 the main code is in main.py file, it use framework called flask, which responds requests with contents of template.
@@ -45,6 +54,18 @@ the main code is in main.py file, it use framework called flask, which responds 
 3. requirements.txt lists all the libs that app uses.
 4. app.yaml file tells GCP this app is wrapped in GAE.
 
+* 1.2, deploy GAE
 
+      gcloud app deploy
+      
+* 1.3, select the nearest region for App and type Y.
+
+* 1.4, see result after deployment.
+
+      gcloud app browse
+      
+      [result]
+      
+    ![](https://cdn.qwiklabs.com/BUrEJObysrNmE%2FqmU234RAj3kMiAvwOswH%2FAmSdJ%2FNY%3D)
 
 
