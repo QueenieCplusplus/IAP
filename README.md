@@ -24,3 +24,9 @@ step from 1
 
 > Deployment using AGE
 
+* 1.1, in cloud console, open the cloud shell tab, and type follwing cmd line to clone app from github.
+
+      git clone https://github.com/googlecodelabs/user-authentication-with-iap.git
+
+      cd user-authentication-with-iap.git
+
