@@ -20,6 +20,8 @@
 
 # GAE (most simplest deployment solution)
 
+prework: study how to make app wrapped in GAE using yaml file.
+
 step from 1
 
 > Deployment using AGE
