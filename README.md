@@ -174,7 +174,13 @@ from step 4:
       
 * tips & attentions:
 
-   using jwt lib to do crypto verification.
+The assertion is the cryptographically signed data provided in the specified request header. 
+
+The code uses jwt lib to validate and decode that data. 
+
+Validation uses the "public keys" that Google provides for checking data it signs, and knowing the audience that the data was prepared for (essentially, the Google Cloud project that is being protected). Helper functions keys() and audience() gather and return those values.
+
+The signed object has two pieces of data we need: the verified email address, and the unique ID value (provided in the sub, for subscriber, standard field).
 
    code is like this:
    
@@ -186,9 +192,9 @@ from step 4:
 
         info = jwt.decode(
             assertion,
-            keys(),
+            keys(), // provided by google
             algorithms=['ES256'],
-            audience=audience()
+            audience=audience() // provided by google
         )
 
         return info['email'], info['sub']
