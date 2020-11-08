@@ -125,6 +125,8 @@ Login Again without Cache
 
 # Spoofing bypass IAP
 
+spoofer might attack website by bypassing the IAP, and turn off the IAP.
+
 from step 3:
 
 > User ID will shows in request header it passed thru in web browser.
@@ -195,6 +197,8 @@ If there is a risk of IAP being turned off or bypassed, your app can check to ma
 This uses a web request header added by IAP, called X-Goog-IAP-JWT-Assertion. The value of the header is a crypto-signed object that also contains the user id data. Your app can verify the digital signature and use the data provided in this object to be certain that it was provided by IAP without alteration.
 
 Digital signature verification requires several extra steps, such as retrieving the latest set of Google public keys. You can decide whether your app needs these extra steps based on the risk that someone might be able to turn off or bypass IAP, and the sensitivity of the application.
+
+If IAP is turned off or bypassed, the verified data would either be missing, or invalid, since it cannot have a valid signature unless it was created by the holder of Google's private keys.
 
 # Crypto
 
