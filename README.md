@@ -123,7 +123,7 @@ Login Again without Cache
      
 * 2.10, do not enter the already-exist account, use "another user account", re-enter username and password to check credentials is allowed.
 
-# Spoofing 
+# Spoofing bypass IAP
 
 from step 3:
 
@@ -185,6 +185,16 @@ vesrion 2 program has been changed to retrieve the user information that IAP pro
        curl -X GET <apps url> -H "X-Goog-Authenticated-User-Email: totally fake email"
 
 ![](https://raw.githubusercontent.com/QueenieCplusplus/IAP/main/gae%20browse.png)
+
+# Oauth
+
+"make sure the IAP sevice is opened by admin" & "make sure developer is code with jwt lib for login"
+
+If there is a risk of IAP being turned off or bypassed, your app can check to make sure the id info it receives is valid. 
+
+This uses a web request header added by IAP, called X-Goog-IAP-JWT-Assertion. The value of the header is a crypto-signed object that also contains the user id data. Your app can verify the digital signature and use the data provided in this object to be certain that it was provided by IAP without alteration.
+
+Digital signature verification requires several extra steps, such as retrieving the latest set of Google public keys. You can decide whether your app needs these extra steps based on the risk that someone might be able to turn off or bypass IAP, and the sensitivity of the application.
 
 # Crypto
 
