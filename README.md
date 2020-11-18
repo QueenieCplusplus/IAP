@@ -248,6 +248,8 @@ The signed object has two pieces of data we need: the verified email address, an
 # Ref Doc
 
   https://cloud.google.com/armor/docs/security-policy-overview
+  
+  https://cloud.google.com/armor/docs/configure-security-policies
 
 # Ref code
 
